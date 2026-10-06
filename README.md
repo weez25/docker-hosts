@@ -7,6 +7,6 @@ resolve container name in /etc/hosts
 docker run --name docker-hosts \
     --restart unless-stopped \
     -v /etc/hosts:/etc/hosts \
-    -v /var/run/docker.sock:/var/run/docker.sock
+    -v /var/run/docker.sock:/var/run/docker.sock \
     ghcr.io/weez25/docker-hosts:latest
 ```
