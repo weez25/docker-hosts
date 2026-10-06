@@ -4,7 +4,7 @@ resolve container name in /etc/hosts
 ## Usage
 
 ```
-docker run --name docker-hosts \
+docker run -d --name docker-hosts \
     --restart unless-stopped \
     -v /etc/hosts:/etc/hosts \
     -v /var/run/docker.sock:/var/run/docker.sock \
